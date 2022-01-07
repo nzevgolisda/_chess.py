@@ -17,14 +17,14 @@ class Board:
         return self
     def move(self):
         s = []
-        sq2 = str(input('Give the destination square: '))
+        sq2 = str(input('Enter the destination square: '))
         for i in range(7, -1, -1):
             for j in range(8):
                 p = self.board[i][j]
                 if p.sq == sq2:
                     s.append([i, j])
         p2 = self.board[s[0][0]][s[0][1]]
-        sq1 = str(input('Give the square of your piece: '))
+        sq1 = str(input('Enter the starting square: '))
         for i in range(7, -1, -1):
             for j in range(8):
                 p = self.board[i][j]
